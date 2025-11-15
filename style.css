@@ -1,5 +1,5 @@
 /* ================================
-   GLOBAL STYLE
+   GLOBAL
 ================================ */
 body {
     margin: 0;
@@ -23,14 +23,25 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
 /* ================================
    MOBILE BACKGROUND
 ================================ */
+@media only screen and (max-width: 430px) {
+    body.index-bg { background: url("index-mobile.jpg") center/cover no-repeat; }
+    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center/cover no-repeat; }
+    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center/cover no-repeat; }
+    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center/cover no-repeat; }
+}
+
+/* Optional: landscape mode for small devices */
 @media only screen and (max-width: 430px) and (orientation: landscape) {
-    body.index-bg { background: url("index-mobile.jpg") left/cover no-repeat; }
-    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center top/cover no-repeat; }
-    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center top/cover no-repeat; }
-    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center top/cover no-repeat; }
+    body.index-bg { background: url("index-mobile.jpg") center/cover no-repeat; }
+    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center/cover no-repeat; }
+    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center/cover no-repeat; }
+    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center/cover no-repeat; }
+    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center/cover no-repeat; }
 }
 
 /* ================================
@@ -38,13 +49,13 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
 ================================ */
 header {
     text-align: center;
-    padding: 25px;
+    padding: 20px;
     background: rgba(0, 0, 0, 0.85);
     border-bottom: 2px solid #990000;
 }
 header h1 {
     margin: 0;
-    font-size: 32px;
+    font-size: 30px;
     text-shadow: 0 0 10px #ff0000;
 }
 header .back {
@@ -55,7 +66,7 @@ header .back {
 header .back:hover { color: #ff8080; }
 
 /* ================================
-   DEMO NOTIFICATION
+   DEMO NOTE
 ================================ */
 .demo-note {
     background: rgba(255, 0, 0, 0.7);
@@ -92,6 +103,7 @@ header .back:hover { color: #ff8080; }
 
 video {
     width: 100%;
+    max-height: 450px;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -114,7 +126,6 @@ video {
     font-weight: bold;
     transition: 0.25s;
 }
-
 .main-btn:hover, .sub-btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 18px rgba(255,0,0,0.7);
@@ -166,7 +177,7 @@ video {
 @media only screen and (max-width: 768px) {
     header h1 { font-size: 26px; }
     .container { padding: 15px; }
-    video { max-height: 250px; }
+    video { max-height: 300px; }
     .main-btn, .sub-btn { font-size: 18px; padding: 14px; }
 }
 
@@ -175,5 +186,3 @@ video {
     video { max-height: 200px; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
-
-
