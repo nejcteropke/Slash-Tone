@@ -5,7 +5,6 @@ body {
     font-family: "Trebuchet MS", Arial, sans-serif;
     color: #f2f2f2;
     overflow-x: hidden;
-    transition: transform 20s ease;
 }
 
 /* ===== BACKGROUND IMAGE ===== */
@@ -29,30 +28,31 @@ body.pinkpop-lead-bg {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    animation: zoomBg 20s ease-in-out infinite alternate;
 }
 
-/* ----- Mobile adjustments ----- */
+/* ===== MOBILE ADJUSTMENTS ===== */
 @media only screen and (max-width: 768px) {
-    body.index-bg {
-        background-position: right center; /* index slika poravnana desno */
-        background-attachment: scroll;    /* fiksna slika na telefonu ne dela dobro */
-    }
+    body.index-bg { background-position: left center; background-attachment: scroll; }
     body.gnr1992-bg,
     body.gnr-clean-bg,
     body.gnr-lead-bg,
     body.pinkpop-main-bg,
     body.pinkpop-clean-bg,
-    body.pinkpop-lead-bg {
-        background-position: center top;
-        background-attachment: scroll;
-    }
+    body.pinkpop-lead-bg { background-position: center top; background-attachment: scroll; }
+
+    header h1 { font-size: 26px; text-align: center; }
+    .container { width: 95%; padding: 15px; margin: 20px auto; }
+    .main-btn, .sub-btn { font-size: 18px; padding: 14px; }
+    .accordion { font-size: 16px; padding: 12px; }
+    video { width: 100%; height: auto; max-height: 250px; }
+    .footer { font-size: 12px; }
 }
 
-/* ===== ZOOM ANIMATION ===== */
-@keyframes zoomBg {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.05); }
+@media only screen and (max-width: 480px) {
+    header h1 { font-size: 22px; }
+    .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
+    .accordion { font-size: 14px; padding: 10px; }
+    video { max-height: 200px; }
 }
 
 /* ===== HEADER ===== */
@@ -114,13 +114,7 @@ header a:hover { color: #ff8080; }
     width: 100%; height: 100%;
     background: rgba(0,0,0,0.6);
     backdrop-filter: blur(4px);
-    opacity: 0;
-    animation: fadeInOverlay 1.5s forwards;
     z-index: -1;
-}
-@keyframes fadeInOverlay {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
 }
 
 /* ===== BUTTONS ===== */
@@ -173,7 +167,6 @@ header a:hover { color: #ff8080; }
 .panel video {
     width: 100%;
     border-radius: 0 0 8px 8px;
-    margin-top: 0;
 }
 
 /* ===== FOOTER / WATERMARK ---- */
@@ -185,19 +178,4 @@ header a:hover { color: #ff8080; }
     font-size: 14px;
     font-weight: bold;
     pointer-events: none; /* ne moti klikov */
-}
-
-/* ===== RESPONSIVE ===== */
-@media only screen and (max-width: 768px) {
-    header h1 { font-size: 26px; }
-    .container { width: 95%; padding: 15px; }
-    .main-btn, .sub-btn { font-size: 18px; padding: 14px; }
-    .accordion { font-size: 16px; padding: 12px; }
-    video { max-height: 250px; }
-}
-@media only screen and (max-width: 480px) {
-    header h1 { font-size: 22px; }
-    .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
-    .accordion { font-size: 14px; padding: 10px; }
-    video { max-height: 200px; }
 }
