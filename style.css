@@ -27,6 +27,48 @@ body.pinkpop-main-bg { background: url("pinkpop-desktop.jpg") center/cover no-re
 body.pinkpop-clean-bg { background: url("pinkpop-clean-desktop.jpg") center/cover no-repeat fixed; }
 body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover no-repeat fixed; }
 
+
+
+/* MOBILE FIX – nič več rezanja na desni */
+@media only screen and (max-width: 768px) {
+
+    .container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main-btn,
+    .sub-btn,
+    .accordion {
+        width: 100%;
+        max-width: 100%;
+        padding: 14px;
+        box-sizing: border-box;
+        margin: 10px 0;
+    }
+
+    .panel video {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* notif box */
+    .demo-note {
+        width: 95%;
+        margin: 10px auto;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    header h1 {
+        font-size: 26px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
+
 /* ================================
    MOBILE BACKGROUND
 ================================ */
@@ -225,6 +267,7 @@ video {
     video { max-height: 200px; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
+
 
 
 
