@@ -10,27 +10,27 @@ body {
 }
 
 /* ================================
-   DESKTOP OZADJA
+   DESKTOP BACKGROUND
 ================================ */
-body.index-bg { background: url("images/index-desktop.jpg") center/cover fixed no-repeat; }
-body.gnr1992-bg { background: url("images/gnr1992-desktop.jpg") center/cover fixed no-repeat; }
-body.gnr-clean-bg { background: url("images/gnr-clean-desktop.jpg") center/cover fixed no-repeat; }
-body.gnr-lead-bg { background: url("images/gnr-lead-desktop.jpg") center/cover fixed no-repeat; }
-body.pinkpop-bg { background: url("images/pinkpop-desktop.jpg") center/cover fixed no-repeat; }
-body.pinkpop-clean-bg { background: url("images/pinkpop-clean-desktop.jpg") center/cover fixed no-repeat; }
-body.pinkpop-lead-bg { background: url("images/pinkpop-lead-desktop.jpg") center/cover fixed no-repeat; }
+body.index-bg { background: url("index-desktop.jpg") center/cover no-repeat fixed; }
+body.gnr1992-bg { background: url("gnr1992-desktop.jpg") center/cover no-repeat fixed; }
+body.gnr-clean-bg { background: url("gnr-clean-desktop.jpg") center/cover no-repeat fixed; }
+body.gnr-lead-bg { background: url("gnr-lead-desktop.jpg") center/cover no-repeat fixed; }
+body.pinkpop-main-bg { background: url("pinkpop-desktop.jpg") center/cover no-repeat fixed; }
+body.pinkpop-clean-bg { background: url("pinkpop-clean-desktop.jpg") center/cover no-repeat fixed; }
+body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover no-repeat fixed; }
 
 /* ================================
-   MOBILNA OZADJA (SAMO TELEFON)
+   MOBILE BACKGROUND
 ================================ */
 @media only screen and (max-width: 768px) {
-    body.index-bg { background: url("images/index-mobile.jpg") left center/cover no-repeat; }
-    body.gnr1992-bg { background: url("images/gnr1992-mobile.jpg") center top/cover no-repeat; }
-    body.gnr-clean-bg { background: url("images/gnr-clean-mobile.jpg") center top/cover no-repeat; }
-    body.gnr-lead-bg { background: url("images/gnr-lead-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-bg { background: url("images/pinkpop-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-clean-bg { background: url("images/pinkpop-clean-mobile.jpg") center top/cover no-repeat; }
-    body.pinkpop-lead-bg { background: url("images/pinkpop-lead-mobile.jpg") center top/cover no-repeat; }
+    body.index-bg { background: url("index-mobile.jpg") left/cover no-repeat; }
+    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center top/cover no-repeat; }
+    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center top/cover no-repeat; }
+    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center top/cover no-repeat; }
 }
 
 /* ================================
@@ -55,7 +55,7 @@ header .back {
 header .back:hover { color: #ff8080; }
 
 /* ================================
-   DEMO WARNING BOX (index)
+   DEMO NOTIFICATION
 ================================ */
 .demo-note {
     background: rgba(255, 0, 0, 0.7);
@@ -70,7 +70,7 @@ header .back:hover { color: #ff8080; }
 }
 
 /* ================================
-   CONTAINERS ZA VIDEA / SECTIONS
+   CONTAINER / VIDEO
 ================================ */
 .container {
     position: relative;
@@ -90,9 +90,6 @@ header .back:hover { color: #ff8080; }
     text-shadow: 0 0 10px black;
 }
 
-/* ================================
-   VIDEO PLAYER
-================================ */
 video {
     width: 100%;
     border-radius: 10px;
@@ -100,7 +97,7 @@ video {
 }
 
 /* ================================
-   GUMBI
+   BUTTONS
 ================================ */
 .main-btn, .sub-btn {
     display: block;
@@ -120,11 +117,11 @@ video {
 
 .main-btn:hover, .sub-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 18px rgba(255, 0, 0, 0.7);
+    box-shadow: 0 0 18px rgba(255,0,0,0.7);
 }
 
 /* ================================
-   ACCORDION (odpiranje videov)
+   ACCORDION
 ================================ */
 .accordion {
     background: linear-gradient(90deg, #7a0000, #ff0000);
@@ -152,7 +149,7 @@ video {
 }
 
 /* ================================
-   FOOTER "by teropke"
+   FOOTER / WATERMARK
 ================================ */
 .footer {
     position: fixed;
@@ -164,7 +161,7 @@ video {
 }
 
 /* ================================
-   MOBILE OPTIMIZACIJA
+   MOBILE OPTIMIZATION
 ================================ */
 @media only screen and (max-width: 768px) {
     header h1 { font-size: 26px; }
