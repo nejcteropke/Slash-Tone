@@ -30,27 +30,57 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
 /* ================================
    MOBILE BACKGROUND
 ================================ */
-/* MOBILE BACKGROUND – vse telefone do 768px */
+/* Mobile backgrounds – 100% working on iPhone */
 @media only screen and (max-width: 768px) {
-    body.index-bg { background: url("index-mobile.jpg") center/cover no-repeat; }
-    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center/cover no-repeat; }
-    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center/cover no-repeat; }
-    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center/cover no-repeat; }
-}
 
+    html.index-bg, body.index-bg {
+        background-image: url("index-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 
-/* Optional: landscape mode for small devices */
-@media only screen and (max-width: 430px) and (orientation: landscape) {
-    body.index-bg { background: url("index-mobile.jpg") center/cover no-repeat; }
-    body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center/cover no-repeat; }
-    body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center/cover no-repeat; }
-    body.gnr-lead-bg { background: url("gnr-lead-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-main-bg { background: url("pinkpop-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center/cover no-repeat; }
-    body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center/cover no-repeat; }
+    html.gnr1992-bg, body.gnr1992-bg {
+        background-image: url("gnr1992-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    html.gnr-clean-bg, body.gnr-clean-bg {
+        background-image: url("gnr-clean-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    html.gnr-lead-bg, body.gnr-lead-bg {
+        background-image: url("gnr-lead-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    html.pinkpop-main-bg, body.pinkpop-main-bg {
+        background-image: url("pinkpop-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    html.pinkpop-clean-bg, body.pinkpop-clean-bg {
+        background-image: url("pinkpop-clean-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    html.pinkpop-lead-bg, body.pinkpop-lead-bg {
+        background-image: url("pinkpop-lead-mobile.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
 }
 
 /* ================================
@@ -195,5 +225,6 @@ video {
     video { max-height: 200px; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
+
 
 
