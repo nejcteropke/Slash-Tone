@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>GNR 1992 – Lead</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="gnr-lead-bg">
+
+<header>
+    <h1>GNR 1992 – Lead Tone</h1>
+    <a class="back" href="gnr1992.html">← Back</a>
+</header>
+
+<div class="container">
+    <button class="accordion">Yesterday Las Vegas 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/yesterdaytokyo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="accordion">Nightrain Tokyo 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/nightraintokyo.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="accordion">Live and Let Die Tokyo 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/liveandletdie.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="accordion">November Rain Tokyo 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/novemberrain.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="accordion">Paradise City Tokyo 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/paradisecity.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <button class="accordion">Patience Las Vegas 1992</button>
+    <div class="panel">
+        <video controls>
+            <source src="videos/patience.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<script>
+const acc = document.getElementsByClassName("accordion");
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        const panel = this.nextElementSibling;
+        panel.style.display = (panel.style.display === "block") ? "none" : "block";
+    });
+}
+</script>
+
+</body>
+</html>
