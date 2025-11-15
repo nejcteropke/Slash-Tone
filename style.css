@@ -32,6 +32,23 @@ body.pinkpop-lead-bg {
     animation: zoomBg 20s ease-in-out infinite alternate;
 }
 
+/* ----- Mobile adjustments ----- */
+@media only screen and (max-width: 768px) {
+    body.index-bg {
+        background-position: right center; /* index slika poravnana desno */
+        background-attachment: scroll;    /* fiksna slika na telefonu ne dela dobro */
+    }
+    body.gnr1992-bg,
+    body.gnr-clean-bg,
+    body.gnr-lead-bg,
+    body.pinkpop-main-bg,
+    body.pinkpop-clean-bg,
+    body.pinkpop-lead-bg {
+        background-position: center top;
+        background-attachment: scroll;
+    }
+}
+
 /* ===== ZOOM ANIMATION ===== */
 @keyframes zoomBg {
     0% { transform: scale(1); }
@@ -57,6 +74,25 @@ header a {
     font-weight: bold;
 }
 header a:hover { color: #ff8080; }
+
+/* ===== DEMO NOTIF ===== */
+.demo-note {
+    background: rgba(255, 0, 0, 0.7);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 16px;
+    text-align: center;
+}
+.demo-note a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.demo-note a:hover {
+    color: #ff8080;
+}
 
 /* ===== CONTAINER + OVERLAY ===== */
 .container {
@@ -140,15 +176,16 @@ header a:hover { color: #ff8080; }
     margin-top: 0;
 }
 
-/* ===== BACK BUTTON ===== */
-.back {
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 18px;
-    color: #ff5050;
-    text-decoration: none;
+/* ===== FOOTER / WATERMARK ---- */
+.footer {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    font-weight: bold;
+    pointer-events: none; /* ne moti klikov */
 }
-.back:hover { color: #ff8080; text-shadow: 0 0 10px #ff0000; }
 
 /* ===== RESPONSIVE ===== */
 @media only screen and (max-width: 768px) {
@@ -163,33 +200,4 @@ header a:hover { color: #ff8080; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
     .accordion { font-size: 14px; padding: 10px; }
     video { max-height: 200px; }
-}
-/* ---- DEMO NOTIF ---- */
-.demo-note {
-    background: rgba(255, 0, 0, 0.7);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    font-size: 16px;
-    text-align: center;
-}
-.demo-note a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: underline;
-}
-.demo-note a:hover {
-    color: #ff8080;
-}
-
-/* ---- FOOTER / WATERMARK ---- */
-.footer {
-    position: fixed;
-    bottom: 10px;
-    right: 15px;
-    color: rgba(255,255,255,0.7);
-    font-size: 14px;
-    font-weight: bold;
-    pointer-events: none; /* ne moti klikov */
 }
