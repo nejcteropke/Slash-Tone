@@ -23,7 +23,7 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
 /* ================================
    MOBILE BACKGROUND
 ================================ */
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 430px) and (orientation: landscape) {
     body.index-bg { background: url("index-mobile.jpg") left/cover no-repeat; }
     body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center top/cover no-repeat; }
     body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center top/cover no-repeat; }
@@ -175,4 +175,5 @@ video {
     video { max-height: 200px; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
+
 
