@@ -1,181 +1,180 @@
-/* ===== GLOBAL ===== */
+/* ================================
+   GLOBAL STYLE
+================================ */
 body {
     margin: 0;
     padding: 0;
     font-family: "Trebuchet MS", Arial, sans-serif;
-    color: #f2f2f2;
+    color: #fff;
     overflow-x: hidden;
 }
 
-/* ===== BACKGROUND IMAGE ===== */
-body.index-bg { background-image: url("images/index-slash.jpg"); }
-body.gnr1992-bg { background-image: url("images/gnr1992-main.jpg"); }
-body.gnr-clean-bg { background-image: url("images/gnr1992-clean.jpg"); }
-body.gnr-lead-bg { background-image: url("images/gnr1992-lead.jpg"); }
-body.pinkpop-main-bg { background-image: url("images/pinkpop1995-main.jpg"); }
-body.pinkpop-clean-bg { background-image: url("images/pinkpop-clean.jpg"); }
-body.pinkpop-lead-bg { background-image: url("images/pinkpop-lead.jpg"); }
+/* ================================
+   DESKTOP OZADJA
+================================ */
+body.index-bg { background: url("images/index-desktop.jpg") center/cover fixed no-repeat; }
+body.gnr1992-bg { background: url("images/gnr1992-desktop.jpg") center/cover fixed no-repeat; }
+body.gnr-clean-bg { background: url("images/gnr-clean-desktop.jpg") center/cover fixed no-repeat; }
+body.gnr-lead-bg { background: url("images/gnr-lead-desktop.jpg") center/cover fixed no-repeat; }
+body.pinkpop-bg { background: url("images/pinkpop-desktop.jpg") center/cover fixed no-repeat; }
+body.pinkpop-clean-bg { background: url("images/pinkpop-clean-desktop.jpg") center/cover fixed no-repeat; }
+body.pinkpop-lead-bg { background: url("images/pinkpop-lead-desktop.jpg") center/cover fixed no-repeat; }
 
-/* ===== BACKGROUND STYLE ===== */
-body.index-bg,
-body.gnr1992-bg,
-body.gnr-clean-bg,
-body.gnr-lead-bg,
-body.pinkpop-main-bg,
-body.pinkpop-clean-bg,
-body.pinkpop-lead-bg {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* ===== MOBILE ADJUSTMENTS ===== */
+/* ================================
+   MOBILNA OZADJA (SAMO TELEFON)
+================================ */
 @media only screen and (max-width: 768px) {
-    body.index-bg { background-position: left center; background-attachment: scroll; }
-    body.gnr1992-bg,
-    body.gnr-clean-bg,
-    body.gnr-lead-bg,
-    body.pinkpop-main-bg,
-    body.pinkpop-clean-bg,
-    body.pinkpop-lead-bg { background-position: center top; background-attachment: scroll; }
-
-    header h1 { font-size: 26px; text-align: center; }
-    .container { width: 95%; padding: 15px; margin: 20px auto; }
-    .main-btn, .sub-btn { font-size: 18px; padding: 14px; }
-    .accordion { font-size: 16px; padding: 12px; }
-    video { width: 100%; height: auto; max-height: 250px; }
-    .footer { font-size: 12px; }
+    body.index-bg { background: url("images/index-mobile.jpg") left center/cover no-repeat; }
+    body.gnr1992-bg { background: url("images/gnr1992-mobile.jpg") center top/cover no-repeat; }
+    body.gnr-clean-bg { background: url("images/gnr-clean-mobile.jpg") center top/cover no-repeat; }
+    body.gnr-lead-bg { background: url("images/gnr-lead-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-bg { background: url("images/pinkpop-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-clean-bg { background: url("images/pinkpop-clean-mobile.jpg") center top/cover no-repeat; }
+    body.pinkpop-lead-bg { background: url("images/pinkpop-lead-mobile.jpg") center top/cover no-repeat; }
 }
 
-@media only screen and (max-width: 480px) {
-    header h1 { font-size: 22px; }
-    .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
-    .accordion { font-size: 14px; padding: 10px; }
-    video { max-height: 200px; }
-}
-
-/* ===== HEADER ===== */
+/* ================================
+   HEADER
+================================ */
 header {
     text-align: center;
     padding: 25px;
-    background: rgba(0,0,0,0.85);
-    border-bottom: 2px solid #bb0000;
+    background: rgba(0, 0, 0, 0.85);
+    border-bottom: 2px solid #990000;
 }
 header h1 {
     margin: 0;
     font-size: 32px;
-    letter-spacing: 2px;
     text-shadow: 0 0 10px #ff0000;
 }
-header a {
+header .back {
     color: #ff5050;
     text-decoration: none;
     font-weight: bold;
 }
-header a:hover { color: #ff8080; }
+header .back:hover { color: #ff8080; }
 
-/* ===== DEMO NOTIF ===== */
+/* ================================
+   DEMO WARNING BOX (index)
+================================ */
 .demo-note {
     background: rgba(255, 0, 0, 0.7);
-    color: white;
-    padding: 10px 15px;
-    border-radius: 8px;
-    margin: 15px 0;
-    font-size: 16px;
+    padding: 12px;
+    margin: 20px auto;
     text-align: center;
-}
-.demo-note a {
-    color: #fff;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    font-size: 17px;
     font-weight: bold;
-    text-decoration: underline;
-}
-.demo-note a:hover {
-    color: #ff8080;
 }
 
-/* ===== CONTAINER + OVERLAY ===== */
+/* ================================
+   CONTAINERS ZA VIDEA / SECTIONS
+================================ */
 .container {
     position: relative;
     width: 90%;
     max-width: 900px;
-    margin: auto;
+    margin: 30px auto;
     padding: 20px;
-    margin-top: 30px;
     border-radius: 12px;
     border: 1px solid #222;
-    box-shadow: 0 0 12px rgba(0,0,0,0.6);
-    overflow: hidden;
-}
-.container::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.6);
-    backdrop-filter: blur(4px);
-    z-index: -1;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 14px rgba(0,0,0,0.5);
 }
 
-/* ===== BUTTONS ===== */
+.container h2 {
+    margin-top: 0;
+    text-shadow: 0 0 10px black;
+}
+
+/* ================================
+   VIDEO PLAYER
+================================ */
+video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ================================
+   GUMBI
+================================ */
 .main-btn, .sub-btn {
     display: block;
     width: 100%;
+    text-align: center;
     padding: 16px;
-    margin-bottom: 15px;
-    background: linear-gradient(90deg, #8b0000, #ff0000);
+    background: linear-gradient(90deg, #7a0000, #ff0000);
+    border-radius: 12px;
+    border: 1px solid #550000;
     color: white;
     font-size: 20px;
-    text-align: center;
+    margin-bottom: 15px;
     text-decoration: none;
-    border-radius: 10px;
-    border: 1px solid #660000;
-    box-shadow: 0 0 10px rgba(255,0,0,0.4);
+    font-weight: bold;
     transition: 0.25s;
 }
+
 .main-btn:hover, .sub-btn:hover {
-    transform: scale(1.04);
-    box-shadow: 0 0 18px rgba(255,0,0,0.7);
+    transform: scale(1.05);
+    box-shadow: 0 0 18px rgba(255, 0, 0, 0.7);
 }
 
-/* ===== VIDEO ACCORDION ---- */
+/* ================================
+   ACCORDION (odpiranje videov)
+================================ */
 .accordion {
-    background: linear-gradient(90deg, #8b0000, #ff0000);
+    background: linear-gradient(90deg, #7a0000, #ff0000);
     color: white;
     cursor: pointer;
     padding: 14px 20px;
     width: 100%;
-    border: none;
     text-align: left;
-    outline: none;
-    font-size: 18px;
+    border: none;
     border-radius: 8px;
+    font-size: 18px;
     margin-bottom: 10px;
     transition: 0.25s;
 }
+
 .accordion:hover {
-    background: linear-gradient(90deg, #ff0000, #8b0000);
+    background: linear-gradient(90deg, #ff0000, #7a0000);
 }
+
 .panel {
-    padding: 0;
     display: none;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-.panel video {
-    width: 100%;
+    background: rgba(0,0,0,0.65);
+    padding: 0 0 15px 0;
     border-radius: 0 0 8px 8px;
 }
 
-/* ===== FOOTER / WATERMARK ---- */
+/* ================================
+   FOOTER "by teropke"
+================================ */
 .footer {
     position: fixed;
-    bottom: 10px;
-    right: 15px;
-    color: rgba(255,255,255,0.7);
+    bottom: 12px;
+    right: 18px;
     font-size: 14px;
-    font-weight: bold;
-    pointer-events: none; /* ne moti klikov */
+    opacity: 0.75;
+    pointer-events: none;
+}
+
+/* ================================
+   MOBILE OPTIMIZACIJA
+================================ */
+@media only screen and (max-width: 768px) {
+    header h1 { font-size: 26px; }
+    .container { padding: 15px; }
+    video { max-height: 250px; }
+    .main-btn, .sub-btn { font-size: 18px; padding: 14px; }
+}
+
+@media only screen and (max-width: 480px) {
+    header h1 { font-size: 22px; }
+    video { max-height: 200px; }
+    .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
