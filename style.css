@@ -23,7 +23,8 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
 /* ================================
    MOBILE BACKGROUND
 ================================ */
-@media only screen and (max-width: 430px) {
+/* MOBILE BACKGROUND – vse telefone do 768px */
+@media only screen and (max-width: 768px) {
     body.index-bg { background: url("index-mobile.jpg") center/cover no-repeat; }
     body.gnr1992-bg { background: url("gnr1992-mobile.jpg") center/cover no-repeat; }
     body.gnr-clean-bg { background: url("gnr-clean-mobile.jpg") center/cover no-repeat; }
@@ -32,6 +33,7 @@ body.pinkpop-lead-bg { background: url("pinkpop-lead-desktop.jpg") center/cover 
     body.pinkpop-clean-bg { background: url("pinkpop-clean-mobile.jpg") center/cover no-repeat; }
     body.pinkpop-lead-bg { background: url("pinkpop-lead-mobile.jpg") center/cover no-repeat; }
 }
+
 
 /* Optional: landscape mode for small devices */
 @media only screen and (max-width: 430px) and (orientation: landscape) {
@@ -186,3 +188,4 @@ video {
     video { max-height: 200px; }
     .main-btn, .sub-btn { font-size: 16px; padding: 12px; }
 }
+
